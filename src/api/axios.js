@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const API = axios.create({
   // baseURL: import.meta.env.VITE_API_URL, // reads from frontend/.env
-  baseURL: 'https://waste-tracker-backend-7qu4.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://waste-tracker-backend-7qu4.onrender.com/api',
 });
 
 // ── Request interceptor ──────────────────────────────────────────────────
